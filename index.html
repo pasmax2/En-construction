@@ -65,7 +65,7 @@ a = size*10;ymouse = 0;xmouse = 0;props = "<font face="+font+" color="+color+" s
 if (n4){for ( i = 0; i < n; i++)document.write('<layer left="0" top="0" width="+a+" name="n4mensaje'+i+'" height="+a+"><center>'+props+mensaje[i]+'</font></center></layer>');}else if (ie){document.write('<div id="padre" style="position:absolute;top:0px;left:0px"><div style="position:relative">');for (i=0; i < n; i++)document.write('<div id="iemensaje" style="position:absolute;top:0px;left:0;height:'+a+';width:'+a+';text-align:center">'+props+mensaje[i]+'</font></div>');document.write('</div></div>');}else if (n6){document.write('<div id="padre" style="position:absolute;top:0px;left:0px"><div style="position:relative">');for (i = 0; i < n; i++)document.write('<div id="iemensaje'+i+'" style="position:absolute;top:0px;left:0;height:'+a+';width:'+a+';text-align:center">'+props+mensaje[i]+'</font></div>');document.write('</div></div>');}
 if(n4)window.captureEvents(Event.MOUSEMOVE);
 function Mouse(evento){ if(ie){xmouse = event.x+20;ymouse = event.y+20;}else if(n4 || n6){xmouse = evento.pageX+20;ymouse = evento.pageY+20;}}
-if(n4)window.onMouseMove = Mouseelse if(ie || n6)document.onmousemove = Mouse;
+if(n4)window.onMouseMove = Mouseelse if (ie || n6)document.onmousemove = Mouse;
 y = new Array();x = new Array();Y = new Array();X = new Array();Yaux = new Array();Xaux = new Array();
 for (i=0; i < n; i++){y[i] = 0;x[i] = 0;Y[i] = 0;X[i] = 0;Yaux[i] = 0;Xaux[i] = 0;}
 function asigna(){if (ie)padre.style.top = document.body.scrollTop;
@@ -87,7 +87,7 @@ window.onload = ondula;
             <div class="top">
             <div class="energy"></div>
                 <div class="top-block">
-                    <a class="logo">Accueil truzle.ca !</a>
+                    <a class="logo">Acceuil truzle.ca !</a>
                     <div class="bg-e-button"></div>
                     <a href class="open"><img src="includes/flash000.png" alt=""></a>
                     </div>
